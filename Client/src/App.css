@@ -1,0 +1,61 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.app-header {
+  background-color: #282c34;
+  padding: 20px;
+  text-align: center;
+}
+
+.app-title {
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center; /* Center the grid horizontally */
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.message {
+  padding: 10px;
+  text-align: center; /* Center text within each message */
+}
+
+.message-name {
+  margin-bottom: 5px;
+}
+
+.message-item, .message-timestamp {
+  margin: 5px 0;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
