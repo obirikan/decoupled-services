@@ -58,3 +58,6 @@ app.get('/send-to-queue', async (req, res) => {
 
 // Start the HTTP server
 app.listen(PORT, () => console.log(`Service B running on port ${PORT}`));
+
+
+//this service produces random Orderdata to the Task Queue for the consumer to use.............
